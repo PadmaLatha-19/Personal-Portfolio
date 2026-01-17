@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h2 class="logo">Portfolio</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Services</a>
+        <a href="#">Skills</a>
+        <a href="#contactForm">Contact Me</a>
+    </nav>
+
+    <!-- RESUME DOWNLOAD BUTTON -->
+    <a href="./assets/Padmalatha_Intern_Resume.pdf" download class="btn resume-btn">
+         Download Resume
+    </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p>Hello, my name is</p>
+        <h1>Padma <span>Latha</span></h1>
+        <h3>I am a Student</h3>
+
+        <div class="email-box">
+            <input type="email" placeholder="Enter Your Email">
+            <button>Hire Me</button>
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="./image.avif" alt="Profile">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-img">
+        <img src="./image2.avif" alt="About">
+    </div>
+
+    <div class="about-text">
+        <h2>About Me</h2>
+        <h4>Developer & Designer</h4>
+        <p>
+            I am a student who is passionate about learning web development.
+            I have basic knowledge of HTML and CSS and enjoy designing user-friendly web pages.
+            I am continuously improving my skills and exploring new technologies.
+        </p>
+        
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="services">
+    <h1>Our Projects</h1>
+
+    <div class="service-container">
+
+    <!-- Menu Card -->
+    <div class="service-card">
+        <div class="icon"></div>
+        <h3>Menu Card</h3>
+        <p>
+            A simple menu card designed using HTML and CSS.
+            Displays food items with images and prices using Flexbox.
+        </p>
+
+        <input type="checkbox" id="menu-toggle" class="toggle-img">
+        <label for="menu-toggle" class="read-btn">Read More</label>
+
+        <img src="./menu.png" alt="Menu Card Preview" class="service-image">
+    </div>
+
+    <!-- Login Form -->
+    <div class="service-card">
+        <div class="icon"></div>
+        <h3>Login Form</h3>
+        <p>
+            A clean login form created using HTML and CSS
+            with simple styling for better usability.
+        </p>
+
+        <input type="checkbox" id="login-toggle" class="toggle-img">
+        <label for="login-toggle" class="read-btn">Read More</label>
+
+        <img src="./login.png" alt="Login Form Preview" class="service-image">
+    </div>
+
+    <!-- Portfolio -->
+    <div class="service-card">
+        <div class="icon"></div>
+        <h3>Portfolio</h3>
+        <p>
+            A personal portfolio website showcasing
+            projects, skills, and basic information.
+        </p>
+
+        <input type="checkbox" id="portfolio-toggle" class="toggle-img">
+        <label for="portfolio-toggle" class="read-btn">Read More</label>
+
+        <img src="./portfolio.png" alt="Portfolio Preview" class="service-image">
+    </div>
+
+</div>
+
+</section>
+
+<!-- CONTACT FORM POPUP (HIDDEN BY DEFAULT) -->
+<section id="contactForm" class="contact-popup">
+    <a href="#" class="close"></a>
+
+    <h2>Contact Me</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Current Occupation" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- PROJECT IMAGE MODALS -->
+<div id="menuModal" class="modal">
+    <a href="#" class="close"></a>
+    <img src="images/menu-card.png" alt="">
+</div>
+
+<div id="loginModal" class="modal">
+    <a href="#" class="close"></a>
+    <img src="images/login-form.png" alt="">
+</div>
+
+<div id="portfolioModal" class="modal">
+    <a href="#" class="close"></a>
+    <img src="images/portfolio.png" alt="">
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Padma Latha</h3>
+
+    <div class="social-icons">
+        <a href="https://wa.me/918072799559" target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/www.linkedin.com/in/padmalatha04" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+
+    <small>Copyright © Padma Latha</small>
+</footer>
+
+
+</body>
+</html>
